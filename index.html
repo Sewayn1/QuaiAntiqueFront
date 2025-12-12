@@ -15,13 +15,13 @@
     <header>
         
         <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
-  <div class="container-fluid">
+    <div class="container-fluid">
     <a class="navbar-brand" href="/">Quai Antique</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> <!--m = Margin / e = end / b = bottom / s = start -->
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> <!-- m = Margin / e = end / b = bottom / s = start -->
         <li class="nav-item">
           <a class="nav-link" href="#">Accueil</a>
         </li>
@@ -55,7 +55,24 @@
         <!-- Le contenu de la page sera injectée ici-->
     </main>
     
-    <footer>Le footer de mon site</footer>
+    <footer class="bg-dark text-white text-center footer">
+       <div class="row">
+        <div class="col-12 col-lg-4"> <!-- Col 12 représente 12 Colone | lg-4 représente un tier de 12 et lg= lenght-->
+            <h3 class="text-primary">Nos Horaires</h3>
+            <p>Du Mardi au Dimanche</p>
+            <p>De 12:00 à 14:00 et de 19:00 à 22:30</p>
+        </div>
+        <div class="col-6 col-lg-4">
+            <h3 class="text-primary">Notre Adresse</h3>
+            <p>5 Rue des ports boréales, 56203 Chambéry</p>
+        </div>
+        <div class="col-6 col-lg-4">
+            <h3 class="text-primary">Nous contacter</h3>
+            <p>contact@quai-antique.com</p>
+            <p>01 01 01 01 01</p>
+        </div>
+       </div>
+     </footer>
 
     <script type="module" src="./Router/router.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
