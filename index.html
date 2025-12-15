@@ -1,80 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="scss/main.css"/>
 
-    <title>Quai Antique</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="scss/main.css" />
+
+  <title>Quai Antique</title>
 </head>
+
 <body>
 
-    <header>
-        
-        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
-    <div class="container-fluid">
-    <a class="navbar-brand" href="/">Quai Antique</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> <!-- m = Margin / e = end / b = bottom / s = start -->
-        <li class="nav-item">
-          <a class="nav-link" href="/">Accueil</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/galerie">Galerie</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">La Carte</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Réservation</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Mon Compte
-          </a>
-          <ul class="dropdown-menu dropdown-menu-end">
-            <li><a class="dropdown-item" href="#">Connexion/Deconnexion</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Mon Compte</a></li>
+  <header>
+
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">Quai Antique</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> <!-- m = Margin / e = end / b = bottom / s = start -->
+            <li class="nav-item">
+              <a class="nav-link" href="/">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/galerie">Galerie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/carte">La Carte</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Réservation</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Mon Compte
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="/login">Connexion/Deconnexion</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Mon Compte</a></li>
+              </ul>
+            </li>
           </ul>
-        </li>
-      </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <main id="main-page">
+    <!-- Le contenu de la page sera injectée ici-->
+  </main>
+
+  <footer class="bg-dark text-white text-center footer">
+    <div class="row">
+      <div class="col-6 col-lg-4">
+        <h3 class="text-primary">Notre Adresse</h3>
+        <p>5 Rue des ports boréales, 56203 Chambéry</p>
+      </div>
+      <div class="col-6 col-lg-4"> <!-- Col 12 représente 12 Colone | lg-4 représente un tier de 12 et lg= lenght-->
+        <h3 class="text-primary">Nos Horaires</h3>
+        <p>Du Mardi au Dimanche</p>
+        <p>De 12:00 à 14:00 et de 19:00 à 22:30</p>
+      </div>
+      <div class="col-6 col-lg-4">
+        <h3 class="text-primary">Nous contacter</h3>
+        <p>contact@quai-antique.com</p>
+        <p>01 01 01 01 01</p>
+      </div>
     </div>
-  </div>
-</nav>
-    
-    </header>
+  </footer>
 
-    <main id="main-page">
-        <!-- Le contenu de la page sera injectée ici-->
-    </main>
-    
-    <footer class="bg-dark text-white text-center footer">
-       <div class="row">
-        <div class="col-6 col-lg-4">
-            <h3 class="text-primary">Notre Adresse</h3>
-            <p>5 Rue des ports boréales, 56203 Chambéry</p>
-        </div>
-          <div class="col-12 col-lg-4"> <!-- Col 12 représente 12 Colone | lg-4 représente un tier de 12 et lg= lenght-->
-            <h3 class="text-primary">Nos Horaires</h3>
-            <p>Du Mardi au Dimanche</p>
-            <p>De 12:00 à 14:00 et de 19:00 à 22:30</p>
-        </div>
-        <div class="col-6 col-lg-4">
-            <h3 class="text-primary">Nous contacter</h3>
-            <p>contact@quai-antique.com</p>
-            <p>01 01 01 01 01</p>
-        </div>
-       </div>
-     </footer>
-
-    <script type="module" src="./Router/router.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="./Router/router.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

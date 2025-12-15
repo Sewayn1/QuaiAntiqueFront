@@ -11986,7 +11986,7 @@ html {
 }
 
 main {
-  margin-bottom: 250px;
+  margin-bottom: 400px;
 }
 
 footer.footer {
@@ -11994,6 +11994,7 @@ footer.footer {
   position: absolute;
   bottom: 0;
   width: 100%;
+  max-height: 400px;
 }
 
 p {
