@@ -5,7 +5,10 @@ export const allRoutes = [
     new Route("/", "Accueil", "/pages/home.html"),
     new Route("/galerie", "Galerie", "/pages/galerie.html"),
     new Route("/carte", "Carte", "/pages/carte.html"),
-    new Route("/login", "Connexion", "/pages/login.html"),
+    new Route("/login", "Connexion", "/pages/auth/login.html"),
+    new Route("/signup", "S'inscire", "/pages/auth/signup.html"),
+    new Route("/account", "Mon Espace", "/pages/auth/account.html"),
+    new Route("/editPassword", "Modifier Mot de Passe", "/pages/auth/editPassword.html"),
 ];
 
 //Le titre s'affiche comme ceci : Route.titre - websitename
