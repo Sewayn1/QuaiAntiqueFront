@@ -1,44 +1,112 @@
 <div class="hero-scene text-center text-white">
-<div class="hero-scene-content">
-    <h1>Galerie</h1>
-  </div>
+    <div class="hero-scene-content">
+        <h1>Galerie</h1>
+    </div>
 </div>
 
 <div class="container">
-    <div class="row row-cols-2 row-cols-lg-3">
-        <div class="col p-3">
-            <div class="image-card text-white">
-                <img src="../images/food-5282718_1280.jpg" class="rounded w-100"/>
-                <p class="titre-image">Dressage des plats</p>
+    <div class="text-center">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">Ajouter
+            une Photo</button>
+        <div class="row row-cols-2 row-cols-lg-3">
+            <div class="col p-3">
+                <div class="image-card text-white">
+                    <img src="../images/food-5282718_1280.jpg" class="rounded w-100" />
+                    <p class="titre-image">Dressage des plats</p>
+                    <div class="action-image-buttons">
+                        <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                            data-bs-target="#DeletePhotoModal"><i class="bi bi-trash"></i></button>
+                        <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                            data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col p-3">
+                <div class="image-card text-white">
+                    <img src="../images/street-6099209_1280.jpg" class="rounded w-100" />
+                    <p class="titre-image">Ruelle du Restaurant</p>
+                </div>
+            </div>
+            <div class="col p-3">
+                <div class="image-card text-white">
+                    <img src="../images/lasagna-5994612_1280.jpg" class="rounded w-100" />
+                    <p class="titre-image">Service</p>
+                </div>
+            </div>
+            <div class="col p-3">
+                <div class="image-card text-white">
+                    <img src="../images/table-setting-6859276_1280.jpg" class="rounded w-100" />
+                    <p class="titre-image">Produits Frais</p>
+                </div>
+            </div>
+            <div class="col p-3">
+                <div class="image-card text-white">
+                    <img src="../images/table-setting-6859276_1280.jpg" class="rounded w-100" />
+                    <p class="titre-image">Dressage</p>
+                </div>
+            </div>
+            <div class="col p-3">
+                <div class="image-card text-white">
+                    <img src="../images/street-6099209_1280.jpg" class="rounded w-100" />
+                    <p class="titre-image">Titre</p>
+                </div>
             </div>
         </div>
-        <div class="col p-3">
-            <div class="image-card text-white">
-                <img src="../images/street-6099209_1280.jpg" class="rounded w-100"/>
-                <p class="titre-image">Ruelle du Restaurant</p>
+        <div class="text-center">
+            <a href="#" class="btn btn-primary">Réserver</a>
+        </div>
     </div>
-</div>
-<div class="col p-3">
-            <div class="image-card text-white">
-                <img src="../images/lasagna-5994612_1280.jpg" class="rounded w-100"/>
-                <p class="titre-image">Service</p>
+    <!-- Modal Edition -->
+    <div class="modal fade" id="EditionPhotoModal" tabindex="-1" aria-labelledby="EditionPhotoModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="EditionPhotoModalLabel">Edition Photo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="NamePhotoInput" class="form-label">Titre</label>
+                            <input type="text" class="form-control" id="NamePhotoInput" placeholder="Lasagne">
+                        </div>
+                        <div class="mb-3">
+                            <label for="ImageInput" class="form-label">Image</label>
+                            <input type="file" class="form-control" id="ImageInput">
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Enregistrer</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-<div class="col p-3">
-            <div class="image-card text-white">
-                <img src="../images/supplement-8087707_1280.png" class="rounded w-100"/>
-                <p class="titre-image">Produits Frais</p>
+    <!-- Modal Delete -->
+    <div class="modal fade" id="DeletePhotoModal" tabindex="-1" aria-labelledby="DeletePhotoModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="DeletePhotoModalLabel">Etes-vous sur de vouloir supprimer cette Photo?
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <p>Titre Image</p>
+                            <img src="../images/food-5282718_1280.jpg" class="rounded w-100">
+                        </div>
+                        <div class="text-center">
+                        </div>
+                        <div class="text-center">
+                            <button type="button" class="btn btn-danger">Supprimer</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-<div class="col p-3">
-            <div class="image-card text-white">
-                <img src="../images/table-setting-6859276_1280.jpg" class="rounded w-100"/>
-                <p class="titre-image">Dressage</p>
-    </div>
-</div>
-<div class="col p-3">
-            <div class="image-card text-white">
-                <img src="../images/street-6099209_1280.jpg" class="rounded w-100"/>
-                <p class="titre-image">Titre</p>
-    </div>
-</div>
