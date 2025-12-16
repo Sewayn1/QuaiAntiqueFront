@@ -1,0 +1,91 @@
+<div class="hero-scene text-center text-white">
+    <div class="hero-scene-content">
+        <h1>Ma réservation</h1>
+    </div>
+</div>
+<div class="container">
+    <form>
+        <div class="mb-3">
+            <label for="NameInput" class="form-label">Nom</label>
+            <input disabled type="text" class="form-control" id="NameInput" placeholder="Nom" value="Martin">
+        </div>
+        <div class="mb-3">
+            <label for="LastNameInput" class="form-label">Prénom</label>
+            <input disabled type="text" class="form-control" id="LastNameInput" placeholder="Prénom" value="Jeremy">
+        </div>
+        <div class="mb-3">
+            <label for="AllergieInput" class="form-label">Allergies</label>
+            <input type="text" class="form-control" id="AllergieInput"
+                placeholder="Vos Allergies (Fruits de mer, arachides,...)" value="">
+        </div>
+        <div class="mb-3">
+            <label for="ConviveInput" class="form-label">Nombre de Convives</label>
+            <input type="number" class="form-control" id="ConviveInput" placeholder="Combiens de personne?">
+        </div>
+        <div class="mb-3">
+            <label for="DateResaInput" class="form-label">Date</label>
+            <input type="date" class="form-control" id="DateResaInput">
+        </div>
+        <div class="mb-3">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="serviceChoisi" id="midiRadio">
+                <label class="form-check-label" for="midiRadio">
+                    Midi
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="serviceChoisi" id="soirRadio" checked>
+                <label class="form-check-label" for="soirRadio">
+                    Soir
+                </label>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="selectHour" class="form-label">Heure</label>
+            <select class="form-select" id="selectHour">
+                <option>19:15 (Début du Service)</option>
+                <option>19:30</option>
+                <option>19:45</option>
+                <option>20:00</option>
+                <option>20:15</option>
+                <option>20:30</option>
+                <option>20:45</option>
+                <option>21:00</option>
+                <option>21:15</option>
+                <option>21:30</option>
+                <option>21:45</option>
+                <option>22:00 (Dernier Service)</option>
+            </select>
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">Réserver</button>
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#CancelReservationModal">Annuler</button>
+        </div>
+    </form>
+</div>
+    <!-- Modal Cancelling -->
+    <div class="modal fade" id="CancelReservationModal" tabindex="-1" aria-labelledby="CancelReservationModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="CancelReservationModalLabel">Etes-vous sur de vouloir Annuler votre Réservation?
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <p>Réservation: 20:30 | Jeudi 17 décembre 2025</p>
+                        </div>
+                        <div class="text-center">
+                        </div>
+                        <div class="text-center">
+                            <button type="button" class="btn btn-danger"><a class="text-black" href="/">Annuler</a></button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Retour</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
