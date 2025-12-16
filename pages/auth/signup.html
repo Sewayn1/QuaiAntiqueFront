@@ -8,25 +8,47 @@
         <div class="mb-3">
             <label for="NameInput" class="form-label">Nom</label>
             <input type="text" class="form-control" id="NameInput" placeholder="Nom">
+            <div class="invalid-feedback"> <!-- This class is made by Boostrap -->
+                Votre Nom est requis !
+            </div>
         </div>
         <div class="mb-3">
             <label for="LastNameInput" class="form-label">Prénom</label>
             <input type="text" class="form-control" id="LastNameInput" placeholder="Prénom">
+            <div class="invalid-feedback"> <!-- This class is made by Boostrap -->
+                Votre Prénom est requis !
+            </div>
         </div>
         <div class="mb-3">
             <label for="EmailInput" class="form-label">Email</label>
             <input type="email" class="form-control" id="EmailInput" placeholder="Example@email.com">
+            <div class="invalid-feedback"> <!-- This class is made by Boostrap -->
+                Votre mail doit ressembler à celui-ci : test@testmail.com
+            </div>
         </div>
         <div class="mb-3">
             <label for="PasswordInput" class="form-label">Mot de passe</label>
             <input type="password" class="form-control" id="PasswordInput" name="Password">
+            <div class="invalid-feedback"> <!-- This class is made by Boostrap -->
+                Le mot de passe n'est pas assez robuste : Au moins 4 Caractères, avec au moins 1 Majuscule, 1 chiffre et
+                1 caractère Special (@#$%!).
+            </div>
+            <div class="valid-feedback"> <!-- This class is made by Boostrap -->
+                Le mot de passe est robuste.
+            </div>
         </div>
         <div class="mb-3">
             <label for="ValidatePasswordInput" class="form-label">Valider Mot de passe</label>
             <input type="password" class="form-control" id="ValidatePasswordInput" name="ValidatePassword">
+            <div class="invalid-feedback"> <!-- This class is made by Boostrap -->
+                Le Mot de Passe ne correspond pas à celui saisis plus haut !
+            </div>
+            <div class="valid-feedback"> <!-- This class is made by Boostrap -->
+                Le mot de passe de confirmation est correct.
+            </div>
         </div>
         <div class="text-center">
-            <button type="submit" class="btn btn-primary">Inscription</button>
+            <button type="submit" class="btn btn-primary" id="btn-validation-inscription">Inscription</button>
         </div>
     </form>
     <div class="text-center pt-3">
